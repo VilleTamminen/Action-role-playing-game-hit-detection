@@ -7,10 +7,7 @@ using System;
 
 public class Character_hit_detection : MonoBehaviour
 {
-    //Attack dictionary: Key is string combination of attacker_guid and attack_id, value is Attack_info. 
-    private Dictionary<string, Attack_info> attackDict = new Dictionary<string, Attack_info>();
-
-    //Attacker's guid does not change during gameplay.
+   //Attacker's guid does not change during gameplay.
     public System.Guid attacker_guid = System.Guid.NewGuid();
     public float health = 100;
     public float damageType1Resistance = 0.2f;
